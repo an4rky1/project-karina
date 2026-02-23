@@ -83,12 +83,6 @@ export default function SafeOnlinePayments() {
 
         {/* Content */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <div className="mb-4">
-            <span className="text-[#64ffda] text-sm tracking-[0.2em] uppercase">
-              🏛️ Гимназия № 46
-            </span>
-          </div>
-
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#00ffff] via-[#00b8ff] to-[#64ffda] bg-clip-text text-transparent">
             Безопасные онлайн-траты
           </h1>
@@ -609,11 +603,7 @@ export default function SafeOnlinePayments() {
             Помните: безопасность в интернете — это постоянный процесс
           </p>
 
-          <div className="flex items-center justify-center gap-2 text-sm text-[#8892b0]">
-            <span>🏛️ Гимназия № 46</span>
-            <span>•</span>
-            <span>2026</span>
-          </div>
+          <div className="flex items-center justify-center gap-2 text-sm text-[#8892b0]"></div>
 
           <div className="mt-6 pt-6 border-t border-[#ffffff]/10">
             <p className="text-xs text-[#64ffda]">
