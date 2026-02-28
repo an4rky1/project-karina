@@ -545,24 +545,33 @@ export default function SafeOnlinePayments() {
             {[
               {
                 title: "Финансовая безопасность — Википедия",
-                url: "ru.wikipedia.org/wiki/Финансовая_безопасность",
+                url: "https://ru.wikipedia.org/wiki/Финансовая_безопасность",
               },
-              { title: "Цифровая безопасность — vc.ru", url: "vc.ru" },
+              {
+                title: "Цифровая безопасность — vc.ru",
+                url: "https://vc.ru",
+              },
               {
                 title:
                   "Финансовая безопасность в цифровом мире — budget.mos.ru",
-                url: "budget.mos.ru",
+                url: "https://budget.mos.ru",
               },
-              { title: "Безопасность в интернете — sky.pro", url: "sky.pro" },
+              {
+                title: "Безопасность в интернете — sky.pro",
+                url: "https://sky.pro",
+              },
               {
                 title:
                   "Правила финансовой безопасности — journal.sovcombank.ru",
-                url: "journal.sovcombank.ru",
+                url: "https://journal.sovcombank.ru",
               },
             ].map((resource, i) => (
-              <div
+              <a
                 key={i}
-                className="flex items-center gap-4 p-4 bg-[#8a73ff]/5 border border-[#8a73ff]/15 rounded-xl hover:bg-[#8a73ff]/10 hover:border-[#8a73ff]/30 transition-all duration-300 cursor-pointer group"
+                href={resource.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-4 bg-[#8a73ff]/5 border border-[#8a73ff]/15 rounded-xl hover:bg-[#8a73ff]/10 hover:border-[#8a73ff]/30 transition-all duration-300 group"
               >
                 <span className="text-[#8a73ff] text-xl group-hover:scale-110 transition-transform">
                   🔗
@@ -584,7 +593,7 @@ export default function SafeOnlinePayments() {
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
-              </div>
+              </a>
             ))}
           </div>
         </div>
